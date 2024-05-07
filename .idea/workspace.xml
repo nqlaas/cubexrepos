@@ -5,57 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18722236-cdf5-4f6f-beb5-140ba0c99b68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/patterns/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/patterns/single-game.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/akismet-admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/akismet-admin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/akismet-frontend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/akismet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/akismet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/fonts/inter.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/img/akismet-refresh-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/img/akismet-refresh-logo@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/img/arrow-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/img/icon-external.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/img/logo-a-2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/img/logo-full-2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/rtl/akismet-admin-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/rtl/akismet-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/akismet.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/changelog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-cli.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-rest-api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-widget.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/activate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/connect-jp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/enter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/get.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/logo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/notice.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/predefined.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/setup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/start.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/stats.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/title.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/wrapper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/hello.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/css/block-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/css/block-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/css/editor-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/css/editor-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/js/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/patterns/poster-card.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/patterns/poster-card.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/patterns/poster-card.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/single.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,21 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Niklas Eberhöfer",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -122,7 +82,7 @@
       <workItem from="1714833506118" duration="17000" />
       <workItem from="1714976800476" duration="20520000" />
       <workItem from="1715015697098" duration="7000" />
-      <workItem from="1715063360078" duration="2506000" />
+      <workItem from="1715063360078" duration="14825000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,10 @@
         <?php the_post_thumbnail(); ?>
     </div>
     <div class="game-info-container">
+        <a href="/games.html" class="back-button icon">
+            <i data-feather="arrow-left"></i>
+            <span>Back to all games</span>
+        </a>
         <div class="game-info-header">
             <div class="game-infos-intro">
                 <h1 class="page-title"><?php the_title(); ?></h1>
@@ -16,12 +20,10 @@
                     <?php } ?>
             </div>
         </div>
-        <?php the_post(); ?>
+        <div class="game-infos-content">
+            <?php the_content(); ?>
+        </div>
     </div>
-    <article>
-        <h3><?php the_author(); ?></h3>
-        <?php the_content(); ?>
-    </article>
 </main>
 
 <?php get_footer(); ?>

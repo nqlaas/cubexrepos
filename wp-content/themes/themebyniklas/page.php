@@ -3,9 +3,7 @@
 <main>
     <?php the_post(); ?>
 
-    <section>
-        <?php the_content(); ?>
-    </section>
+    <?php the_content(); ?>
 </main>
 
 <?php get_footer(); ?>

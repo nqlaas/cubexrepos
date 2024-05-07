@@ -135,10 +135,8 @@ h4 {
     gap: 2rem;
 }
 
-
-
 /* ---- BUTTONS ---- */
-.wp-block-button__link,
+.wp-element-button.wp-block-button__link,
 .wpcf7-form .wpcf7-submit {
     font-weight: 700;
     font-size: 1rem;

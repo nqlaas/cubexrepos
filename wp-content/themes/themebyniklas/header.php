@@ -9,7 +9,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header>
     <div class="wp_site_identity">
         <?php if ( function_exists( 'the_custom_logo' ) ) {

@@ -49,8 +49,7 @@ function cubex_menus(){
     // Location für verschiedene Navigationen
     $locations = [
         'primary' => __('Primäre Navigation', 'cubex-theme'),
-        'secondary' => __('Sekundäre Navigation' , 'cubex-theme'),
-        'social' => __('Social Media' , 'cubex-theme'),
+        'secondary' => __('Footer Navigation' , 'cubex-theme'),
     ];
 
     register_nav_menus($locations);

@@ -10,12 +10,23 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <p>Test unseres Headers</p>
-
-    <?php wp_nav_menu(
-        [
-            'theme_location'    => 'primary',
-            'container'         => 'ul',
-            'container_class'   => 'main-nav'
-        ]
-    ); ?>
+    <header>
+    <div class="wp_site_identity">
+        <?php if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+        } ?>
+    </div>
+    <nav class="main-nav">
+        <?php wp_nav_menu(
+            [
+                'theme_location'    => 'primary',
+                'container'         => 'ul',
+                'container_class'   => 'main-nav'
+            ]
+        ); ?>
+    </nav>
+    <div class="profile">
+        <i data-feather="bell"></i>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile.png" alt="Profile">
+    </div>
+    </header>

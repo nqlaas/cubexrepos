@@ -4,6 +4,685 @@ Author: Niklas Eberhöfer
 Version: 1.0.0
  */
 
-body{
-    font-family: sans-serif;
+/* ---- NORMALIZE ---- */
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(107.56deg, var(--bgone) 0%, var(--bgtwo) 100%);
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    min-height: calc(100vh - 126px - 126px);
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+}
+
+main p {
+    max-width: 710px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+main>p {
+    text-align: left;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+/* ---- FONTS ---- */
+@font-face {
+    font-family: 'poppins';
+    src: url('assets/fonts/poppins/Poppins-Regular.ttf');
+}
+
+*{
+    font-family: 'poppins';
+}
+
+/* ---- TYPO ---- */
+h1.wp-block-heading,
+h2,
+.page-title {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    margin-bottom: 30px;
+}
+
+h1.wp-block-heading {
+    max-width: 645px;
+}
+
+.page-title {
+    margin-bottom: 60px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+/* ---- HEADER ---- */
+.single-post header {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9rem;
+}
+
+.logo-wrapper {
+    display: contents;
+}
+
+.navburger {
+    position: relative;
+    z-index: 1001;
+    display: none;
+}
+
+/* Nav */
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+header nav ul li.current-menu-item a,
+header nav ul li.current_page_parent a,
+header nav ul li a:hover {
+    color: var(--white);
+    position: relative;
+}
+
+header nav ul li.current-menu-item a:after,
+header nav ul li.current_page_parent a:after {
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 4px;
+    background-color: var(--white);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    border-radius: 50px;
+}
+
+/* Profile */
+header .profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header .profile img {
+    width: 3rem;
+    height: auto;
+}
+
+
+
+/* ---- LAYOUT ---- */
+.introduction {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.introduction .wp-block-group__inner-container>p {
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+/* Games Grid (Blog page) */
+.games-grid,
+main>.wp-block-latest-posts:last-child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.games-grid .single-game,
+main>.wp-block-latest-posts:last-child>li a {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 34px 10px rgba(255, 255, 255, 0.12);
+    border-radius: 33px;
+    overflow: hidden;
+}
+
+main>.wp-block-latest-posts:last-child .wp-block-latest-posts__post-title {
+    display: none;
+}
+
+.games-grid .single-game img,
+main>.wp-block-latest-posts:last-child img {
+    display: block;
+    max-width: 380px;
+    max-height: 580px;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+}
+
+/* Single game view */
+.game-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.game-hero img {
+    width: 100vw;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.game-info-container {
+    position: relative;
+    width: 70vw;
+    background: rgba(145, 145, 145, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(11px);
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-top: 40%;
+}
+
+.game-info-header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--white);
+}
+
+.game-infos-intro {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.game-infos-intro .page-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.game-infos-content>.wp-block-group>p {
+    min-width: 380px;
+    max-width: 50%;
+}
+
+.game-infos-content>.is-layout-flex {
+    gap: 60px;
+}
+
+.game-infos-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+}
+
+.game-infos-content>.is-layout-flex {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.game-infos-content>p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.game-infos-content>h4 {
+    margin-bottom: 2.5rem;
+}
+
+.game-infos-content figure.wp-block-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.game-infos-content figure.wp-block-image:hover {
+    transform: scale(1.05);
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+/* DIES WIRD NUR IM STATISCHEN SO DARGESTELLT, NICHT KOPIEREN (wird überflüssig, sobald Wordpress Gallerie verwendet wird) */
+.game-detail-images {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+
+    figure {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/* Back to overview Button */
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 50px;
+    top: -30px;
+    padding: 12px 20px;
+    background: rgba(144, 144, 144, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(11px);
+    border-radius: 12px;
+}
+
+
+/* Categories */
+.categories {
+    display: flex;
+    gap: 12px;
+}
+
+.category-item,
+.wpcf7-text,
+.wpcf7-textarea {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 3rem;
+    padding: 10px 20px;
+}
+
+.category-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wpcf7-text,
+.wpcf7-textarea {
+    border-radius: 8px;
+    padding: 23px 30px;
+}
+
+.wpcf7-text.wpcf7-not-valid,
+.wpcf7-textarea.wpcf7-not-valid {
+    border-color: red;
+}
+
+form:not(.init) .wpcf7-text[aria-invalid="false"],
+form:not(.init) .wpcf7-textarea[aria-invalid="false"] {
+    border-color: green;
+}
+
+
+/* ---- PAGINATION ---- */
+.pagination {
+    margin-top: 4rem;
+}
+
+.pagination .page-numbers {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.573333px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3.44px);
+    border-radius: 0.5rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    opacity: 0.5;
+}
+
+.pagination .page-numbers.next,
+.pagination .page-numbers.prev {
+    background: none;
+    opacity: 1;
+    border: none;
+}
+
+.pagination .page-numbers.current,
+.pagination .page-numbers:hover {
+    opacity: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+
+
+/* ---- CONTACT FORM ---- */
+/* hide page title on contact form page because another h1 is added in WP */
+.page-id-21 .page-title {
+    display: none;
+}
+
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 80px;
+    max-width: 710px;
+}
+
+.wpcf7-form .message-field {
+    grid-column: span 2;
+}
+
+.wpcf7-form-control,
+.wpcf7-form-control::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    opacity: 0.5;
+    color: var(--white);
+}
+
+.wpcf7-form-control {
+    opacity: 1;
+    width: 100%;
+}
+
+.wpcf7-submit {
+    display: inline-block;
+    width: fit-content;
+}
+
+.wpcf7-form label {
+    text-align: left;
+}
+
+.wpcf7-not-valid-tip {
+    display: none;
+}
+
+
+/* ---- FOOTER ---- */
+footer .footer-nav>ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer .footer-nav>ul li {
+    list-style-type: none;
+}
+
+footer .footer-nav>ul li a {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: var(--grey);
+}
+
+footer .footer-nav>ul li a:hover,
+footer .footer-nav>ul li.current-menu-item a {
+    color: var(--white);
+}
+
+
+
+/*
+* Responsive Styles: 1280px and below
+*/
+@media screen and (max-width: 1280px) {
+
+    main {
+        padding: 0 64px;
+    }
+
+    main p {
+        max-width: 100%;
+    }
+
+    /* Headings */
+    h1.wp-block-heading,
+    h2,
+    .page-title {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 24px;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .introduction .wp-block-group__inner-container>p {
+        margin-bottom: 32px;
+    }
+
+    /* Header & Footer */
+    header,
+    footer {
+        padding: 1rem 4rem;
+    }
+
+    .logo-wrapper img {
+        width: 128px;
+    }
+
+    /* Games Overview */
+    .games-grid,
+    main>.wp-block-latest-posts:last-child {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Single Game View */
+    .game-info-container {
+        margin-top: 40%;
+    }
+
+    .game-infos-intro .page-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .game-infos-content .single-game-info {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .game-infos-content>.wp-block-group>p {
+        max-width: 100%;
+        min-width: unset;
+    }
+}
+
+
+
+/*
+* Responsive Styles: 800px and below
+*/
+@media screen and (max-width: 800px) {
+
+    /* Header */
+    .navburger.openburger {
+        display: block;
+    }
+
+    body.open {
+        overflow: hidden;
+    }
+
+    body.open .navburger.openburger,
+    header .profile {
+        display: none;
+    }
+
+    body.open .navburger.closeburger,
+    body.open header nav {
+        display: block;
+    }
+
+    body.open header .profile {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    body.open header nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    header nav.main-nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #000;
+        z-index: 100;
+    }
+
+    header nav.main-nav>ul>li>a {
+        font-size: 4.5rem;
+        line-height: 7rem;
+    }
+
+    main {
+        padding: 0 32px;
+    }
+
+
+    /* Header & Footer */
+    header,
+    footer {
+        padding: 1rem 2rem;
+    }
+
+
+    /* Games Grid */
+    .games-grid .single-game img,
+    main>.wp-block-latest-posts:last-child img {
+        max-height: 380px;
+    }
+
+    /* Single Game View */
+    .game-info-header {
+        flex-direction: column;
+    }
+
+    .game-infos-content .wp-block-gallery {
+        flex-direction: column;
+        gap: 30px !important;
+    }
+
+    .game-infos-content .wp-block-gallery .wp-block-image {
+        width: 100% !important;
+    }
+
+}
+
+
+/*
+* Responsive Styles: 550px and below
+*/
+@media screen and (max-width: 550px) {
+
+    /* Game Overview */
+    .games-grid,
+    main>.wp-block-latest-posts:last-child {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* single game view */
+    .game-info-container {
+        margin-top: 20%;
+        width: 85vw;
+        padding: 1.5rem;
+    }
+
+    .game-info-header {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .game-infos-content>.is-layout-flex {
+        gap: 30px;
+    }
+
+    /* support form */
+    .wp-block-contact-form-7-contact-form-selector .wpcf7-form {
+        grid-template-columns: 100%;
+    }
+
+    .wpcf7-form .message-field {
+        grid-column: 1;
+    }
 }

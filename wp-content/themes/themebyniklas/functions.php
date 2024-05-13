@@ -31,7 +31,6 @@ add_action('wp_enqueue_scripts', 'cubex_include_stylesheets');
 
 // Einbinden der Skripte
 function cubex_include_scripts() {
-    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true);
     wp_enqueue_script('cubex-scripts', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('tilt-js', 'https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js', array('jquery'), '1.2.1', true);
     wp_enqueue_script('feather-js', 'https://unpkg.com/feather-icons', array(), null, true);

@@ -136,7 +136,7 @@ h4 {
 }
 
 /* ---- BUTTONS ---- */
-.wp-block-button__link,
+a.wp-block-button__link,
 .wpcf7-form .wpcf7-submit {
     font-weight: 700;
     font-size: 1rem;

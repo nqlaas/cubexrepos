@@ -26,20 +26,19 @@ jQuery(document).ready(function ($) {
         $('body').toggleClass('open');
     });
 
-});
-
-
-// Resize function for moving elements into menu for responsive
-jQuery(window).on("ready load resize", function (e) {
-    if ($(window).innerWidth() > 800) {
-        if ($('header .main-nav .footer-nav, header .main-nav .profile').length) {
-            $('.footer-nav').appendTo('footer');
-            $('.profile').appendTo('header');
+    // Resize function for moving elements into menu for responsive
+    $(window).on("ready load resize", function (e) {
+        if ($(window).innerWidth() > 800) {
+            if ($('header .main-nav .footer-nav, header .main-nav .profile').length) {
+                $('.footer-nav').appendTo('footer');
+                $('.profile').appendTo('header');
+            }
+        } else {
+            if ($('header>.profile, footer nav').length) {
+                $('header .profile').prependTo('header nav ul');
+                $('footer nav').appendTo('header nav ul');
+            }
         }
-    } else {
-        if ($('header>.profile, footer nav').length) {
-            $('header .profile').prependTo('header nav ul');
-            $('footer nav').appendTo('header nav ul');
-        }
-    }
+    });
+
 });

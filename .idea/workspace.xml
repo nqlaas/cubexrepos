@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18722236-cdf5-4f6f-beb5-140ba0c99b68" name="Changes" comment="" />
+    <list default="true" id="18722236-cdf5-4f6f-beb5-140ba0c99b68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/single.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +89,7 @@
       <workItem from="1715176134274" duration="3470000" />
       <workItem from="1715366671926" duration="156000" />
       <workItem from="1715581607981" duration="18812000" />
+      <workItem from="1715626193298" duration="4709000" />
     </task>
     <servers />
   </component>
@@ -86,14 +97,4 @@
     <option name="version" value="3" />
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/wp-content/themes/themebyniklas/page.php</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
 </project>

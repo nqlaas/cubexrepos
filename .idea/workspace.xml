@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18722236-cdf5-4f6f-beb5-140ba0c99b68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/css/block-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/css/block-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/themebyniklas/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/themebyniklas/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,7 @@
       <workItem from="1715153601605" duration="15000" />
       <workItem from="1715176134274" duration="3470000" />
       <workItem from="1715366671926" duration="156000" />
-      <workItem from="1715581607981" duration="17310000" />
+      <workItem from="1715581607981" duration="18544000" />
     </task>
     <servers />
   </component>

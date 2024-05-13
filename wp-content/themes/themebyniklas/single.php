@@ -5,7 +5,7 @@
         <?php the_post_thumbnail(); ?>
     </div>
     <div class="game-info-container">
-        <a href="/games.html" class="back-button icon">
+        <a href="/games" class="back-button icon">
             <i data-feather="arrow-left"></i>
             <span>Back to all games</span>
         </a>

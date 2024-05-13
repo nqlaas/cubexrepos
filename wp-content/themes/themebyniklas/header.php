@@ -29,4 +29,7 @@
         <i data-feather="bell"></i>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile.png" alt="Profile">
     </div>
+
+    <i class="navburger openburger" data-feather="menu"></i>
+    <i class="navburger closeburger" data-feather="x"></i>
     </header>

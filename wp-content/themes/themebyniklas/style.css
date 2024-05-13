@@ -420,7 +420,7 @@ form:not(.init) .wpcf7-textarea[aria-invalid="false"] {
 
 /* ---- CONTACT FORM ---- */
 /* hide page title on contact form page because another h1 is added in WP */
-.page-id-21 .page-title {
+.page-id-24 .page-title {
     display: none;
 }
 

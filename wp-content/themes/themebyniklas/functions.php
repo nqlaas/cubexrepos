@@ -7,7 +7,7 @@ function cubex_supports() {
 
     // Editor Styles hinzufügen
     add_theme_support('editor-styles');
-    add_editor_style('/assets/css/editor-style.css');
+    add_editor_style(get_template_directory_uri() . '/assets/css/editor-style.css');
 
     //HTML5 Support
     add_theme_support(
@@ -97,3 +97,6 @@ function fix_svg() {
         </style>';
 }
 add_action( 'admin_head', 'fix_svg' );
+
+// Disabling CF7 from forming it's unnecessary p tags
+add_filter('wpcf7_autop_or_not', '__return_false');
